@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Martinez Jr. Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="logo-img">
+                Alejandro Martinez Jr.
+            </div>
+            <ul>
+                <li><a href="#" onclick="openModal('about')">About</a></li>
+                <li><a href="#" onclick="openModal('skills')">Skills</a></li>
+                <li><a href="#" onclick="openModal('achievements')">Achievements</a></li>
+                <li><a href="#" onclick="openModal('projects')">Projects</a></li>
+                <li><a href="#" onclick="openModal('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="content">
+            <div class="image">
+                <img src="homelogo.png" alt="Home Image" class="home-img">
+            </div>
+            <h1>Hi, I'm <span class="neon-text">Alejandro M. Martinez Jr.</span></h1>
+            <h2>IT Student & Aspiring Developer</h2>
+            <p>With a passion for technology and problem-solving, I aim to contribute to exciting projects and gain practical experience in the tech industry.</p>
+            <div class="socials">
+                <div class="facebook-link">
+                    <i class="fab fa-facebook"></i>
+                    <a href="https://www.facebook.com/alejandro.martinez050302" target="_blank" class="facebook-text">VISIT MY OFFICIAL FACEBOOK PROFILE</a>
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="downloadFile('resume.pdf')"><i class="fas fa-download"></i> Download Resume</button>
+                <button onclick="callMe()"><i class="fas fa-phone"></i> Call Me</button>
+                <button onclick="buyMeCoffee()"><i class="fas fa-coffee"></i> Buy Me a Coffee</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- OJT Work Cycle Section -->
+    <section id="ojt-work-cycle">
+        <h2 class="neon-box">OJT - EMD ADMIN TECH WORK CYCLE</h2>
+        <div class="work-cycle">
+            <div class="division neon-border" id="needs-to-print">
+                <h3>NEEDS TO PRINT</h3>
+                <button onclick="downloadFile('DTR_NEW_2024.xlsx')">Daily Time Record - DTR</button>
+                <button onclick="downloadFile('OTR_FORM_overtime_request_2024.xlsx')">Overtime Request - OTR</button>
+                <button onclick="downloadFile('STAFF_DTR_8.5_X_13_in.pdf')">Staff DTR</button>
+                <button onclick="downloadFile('STAFF_OTR.docx')">Staff OTR</button>
+                <button onclick="downloadFile('INCIDENT_REPORT_editable.docx')">Incident Report - IR</button>
+                <button onclick="downloadFile('Employment_Application_Update.docx')">Employment Application</button>
+            </div>
+            <div class="division neon-border" id="needs-to-encode">
+                <h3>NEEDS TO ENCODE</h3>
+                <button onclick="downloadFile('Diesel_Monitoring_Template_Per_Site_v2.0.xlsx')">Diesel Monitoring Template V2.0</button>
+                <button onclick="downloadFile('CRUDE-MONITORING-FORM-PURCHASING-DEPT_1.xlsx')">Crude Monitoring Form</button>
+                <button onclick="downloadFile('Fuel-Requisition-Slip.docx')">Fuel Requisition Slip</button>
+            </div>
+            <div class="division neon-border" id="needs-to-take-picture">
+                <h3>NEEDS TO TAKE A PICTURE</h3>
+                <p>Diesel picture prices of Kapitan. Submit report to "Diesel" group chat in Facebook.</p>
+                <img src="diesel-price-example.jpg" alt="Diesel Kapitan Price Example" class="small-zoomable-img">
+            </div>
+        </div>
+        <div class="banner neon-border">
+            <p id="quote-display" class="glowing-text"></p>
+            <p><strong style="color: white;">CAUTION: If you have 4 or 2 booklets left, get Fuel Requisition Slip booklet at Dumanjug QM Main Office in charge Maam Madi! Thank you.</strong></p>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-text"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Alejandro M. Martinez Jr. | ADMIN</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
